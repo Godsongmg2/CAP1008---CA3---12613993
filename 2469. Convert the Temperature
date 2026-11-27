@@ -1,0 +1,9 @@
+double* convertTemperature(double celsius, int* returnSize) {
+    double* Temperature = malloc(2 * sizeof(double));
+
+    Temperature[0] = celsius + 273.15;
+    Temperature[1] = celsius * 1.80 + 32;
+
+    *returnSize = 2;
+    return Temperature;
+}
